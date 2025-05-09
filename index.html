@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to JS Playground!</h1>
+
+  <!-- Buttons -->
+  <button id="clickBtn">Click Me</button>
+  <button id="hoverBtn">Hover Over Me</button>
+  <input type="text" id="keypressInput" placeholder="Type something...">
+
+  <!-- Interactive -->
+  <button id="changeBtn">Change Text/Color</button>
+  <div id="tabs">
+    <button class="tab" data-tab="1">Tab 1</button>
+    <button class="tab" data-tab="2">Tab 2</button>
+    <div id="tabContent"></div>
+  </div>
+
+  <!-- Image Gallery -->
+  <!-- Image Gallery -->
+<div id="gallery">
+    <img id="mainImage" src="cover.png" alt="Gallery" width="300">
+    <div>
+      <button onclick="changeImage('https://images.pexels.com/photos/10654218/pexels-photo-10654218.jpeg')">Red</button>
+      <button onclick="changeImage('https://images.pexels.com/photos/31910663/pexels-photo-31910663.jpeg')">Green</button>
+      <button onclick="changeImage('https://images.pexels.com/photos/30325947/pexels-photo-30325947.jpeg')">Blue</button>
+    </div>
+  </div>
+  
+
+  <!-- Form -->
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Name (required)">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button type="submit">Submit</button>
+    <p id="formFeedback"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
